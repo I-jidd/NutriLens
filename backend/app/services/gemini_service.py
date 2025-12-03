@@ -35,7 +35,7 @@ async def analyze_image_with_gemini(image_bytes: bytes, mime_type: str = "image/
     if not settings:
         return {"error": "Server configuration error: Missing API Key"}
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     # The Prompt Engineering (as defined in TRD)
     prompt = """
